@@ -1,0 +1,247 @@
+/* start globel role */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* small  */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* large  */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* end globel role */
+/* start background color */
+.backgroundImg {
+  position: relative;
+  box-shadow: 4px 8px 20px -10px #000000;
+  min-height: 550px;
+  background-color: #8e44ad;
+  margin-top: 74px;
+  margin-bottom: 71px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.container .backgroundImg .color2 {
+  min-height: 550px;
+  width: 630px;
+  background-color: #7d3c98;
+  border-top-left-radius: 572px 550px;
+  border-bottom-right-radius: 394px;
+  border-bottom-left-radius: 10px;
+}
+
+.container .backgroundImg .color3 {
+  min-height: 550px;
+  width: 518px;
+  background-color: #7d3c98;
+  border-bottom-left-radius: 327px 353px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.container .backgroundImg .whiteBackground {
+  box-shadow: -3px 3px 40px -10px #000000;
+  position: absolute;
+  width: 91%;
+  height: 86%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+}
+
+/* end background color */
+/* start logo */
+.container .logo {
+  position: absolute;
+  top: 24%;
+  left: 23%;
+  z-index: 1;
+}
+
+.container .logo i {
+  font-size: 20px;
+  color: #7d3c98;
+}
+
+.container .logo p {
+  font-weight: 800;
+  color: #273746;
+}
+
+/* end logo */
+/* start background input */
+.container .backgroundImg .whiteBackground .backgroundInput {
+  width: 40%;
+  max-width: 274px;
+  height: 68%;
+  margin-bottom: -53px;
+  box-shadow: rgb(153, 125, 125) 1px 1px 10px -6px;
+  padding-top: 18px;
+  padding-left: 34px;
+}
+
+/* Styles for Input Groups */
+.container .backgroundInput .inputGroup {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.container .backgroundInput input {
+  width: 84%;
+  padding-left: 30px;
+  border: none;
+  border-bottom: 1px solid #34495e;
+  font-size: 12px;
+  height: 32px;
+  text-align: left;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.container .backgroundInput input:focus {
+  border-bottom-color: #87539d;
+}
+
+/* Styles for Icons */
+.container .backgroundInput .inputIcon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #34495e;
+  font-size: 14px;
+}
+
+.container .backgroundImg .whiteBackground .img {
+  width: 41%;
+  max-width: 400px;
+  height: 80%;
+  background-image: url(../img/6333204.jpg);
+  background-size: cover;
+}
+
+/* end background input */
+/* start login botton */
+.container .backgroundInput .login {
+  border: none;
+  background-color: #af7ac5;
+  color: white;
+  width: 184px;
+  height: 29px;
+  border-radius: 20px;
+  margin-left: 3%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container .backgroundInput .login:hover {
+  background-color: #7d3c98;
+}
+
+/* end login botton */
+/* start model telephone */
+@media (max-width: 1000px) {
+  .backgroundImg .img {
+    display: none;
+  }
+
+  .container .backgroundImg .whiteBackground {
+    box-shadow: -3px 3px 40px -10px #000000;
+    width: 50%;
+    height: 60%;
+  }
+
+  .container .backgroundImg .whiteBackground .backgroundInput {
+    width: 100%;
+    max-width: 274px;
+    height: 100%;
+    box-shadow: none;
+
+  }
+
+  .container .backgroundInput .login {
+    width: 170px;
+    height: 29px;
+  }
+
+  .container .logo {
+    top: 20%;
+    left: 29%;
+  }
+
+  .container .logo i {
+    color: #ebdef0;
+  }
+
+  .container .logo p {
+    color: #ebdef0;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+
+  .container .backgroundImg .whiteBackground {
+    width: 70%;
+    height: 60%;
+    margin-top: 30px;
+  }
+
+
+  .container .logo {
+    top: 25%;
+    left: 20%;
+  }
+
+  .container .logo i {
+    color: #ebdef0;
+  }
+
+  .container .logo p {
+    color: #ebdef0;
+  }
+}
+
+/* end model telephone */

@@ -7,8 +7,10 @@
   <title>EduExchange</title>
   <!-- normalize code css -->
   <link rel="stylesheet" href="../css/normalize.css">
-  <!-- design css -->
-  <link rel="stylesheet" href="./principalc.css">
+  <!-- prncipal design css -->
+  <link rel="stylesheet" href="./css/principalc.css">
+  <!-- body right css -->
+  <link rel="stylesheet" href="./css/body-right.css">
   <!-- icones -->
   <link rel="stylesheet" href="../css/all.min.css">
   <!-- font family -->
@@ -28,6 +30,7 @@
             <span>Search</span>
             <i id="seicone" class="fa-solid fa-magnifying-glass"></i>
           </button>
+          <div class="search-design"></div>
         </div>
       </div>
       <div class="logo">
@@ -70,9 +73,17 @@
       <ul class="sla&msg">
         <li><i class="fa-solid fa-caret-down salle-button"></i> Salles</li>
         <ul class="matierlist">
-          <li><i class="fa-solid fa-users-line"></i> Math</li>
-          <li><i class="fa-solid fa-users-line"></i> Physics</li>
-          <li><i class="fa-solid fa-users-line"></i> IT</li>
+          <li>
+            <i class="fa-solid fa-users-line"></i>
+            <span class="salle" data-salle="Math">Math</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-users-line"></i>
+            <span class="salle" data-salle="Physics">Physics</span>
+          </li>
+          <li><i class="fa-solid fa-users-line"></i>
+            <span class="salle" data-salle="IT">IT</span>
+          </li>
           <li id="ajouter-salle"><i class="fa-solid fa-square-plus ajouter-salle"></i>ajouter salle</li>
         </ul>
         <li><i class="fa-solid fa-caret-down"></i> Message</li>
@@ -80,7 +91,33 @@
     </div>
     <!-- end body left -->
     <!-- start body right -->
-    <div class="body-right"></div>
+    <div class="body-right">
+      <div class="head-right">
+        <span><i class="fa-solid fa-infinity"></i> Math</span>
+        <button class="Message"><i class="fa-solid fa-comment"></i> Message</button>
+      </div>
+      <div class="conversation">
+        <span>
+          <h1>Tout le monde est réuni ici sur le groupe de maths ! 🧮</h1>
+          Partagez des annonces, des astuces, des ressources ou des questions concernant les cours, les devoirs, ou les
+          défis mathématiques à relever. ⭐
+        </span>
+        <div class="message-container">
+          <div class="msg-moi">fin a ba abdellah</div>
+          <div class="msg-autre">wa khoya ha hna m3a dnya kn3diw onta hani kolchi mzn</div>
+        </div>
+      </div>
+      <div class="text-msg">
+        <div class="left-button">
+          <button class="imoji"><i class="fa-regular fa-face-tired"></i> </button>
+          <button class="fil"><i class="fa-regular fa-folder-open"></i></button>
+        </div>
+        <form action="">
+          <input type="text" placeholder="Taper un Message">
+        </form>
+        <button class="envoie"><i class="fa-solid fa-paper-plane"></i></button>
+      </div>
+    </div>
     <!-- end body right -->
   </div>
   <!-- end body -->
